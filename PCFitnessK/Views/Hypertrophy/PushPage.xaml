@@ -8,34 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="MainPageWindowState">
-                <VisualState x:Name="MainPageWideState">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="900"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="MainPageStackpanel1.Orientation" Value="Horizontal"/>
-                    </VisualState.Setters>
-                </VisualState>
-
-                <VisualState x:Name="MainPageNarrowState">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowHeight="0"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="MainPageStackpanel1.Orientation" Value="Vertical"/>
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
         <Border BorderBrush="#e5e5e5" BorderThickness="10">
             <Rectangle Fill="#3f3f3f"></Rectangle>
         </Border>
 
         <ScrollViewer 
-                      x:Name="MainPageScrollBar1"
+                      x:Name="HypertrophyPushPageScrollBar1"
                       HorizontalAlignment="Center"
                       VerticalAlignment="Center"
                       Width="auto"
@@ -44,14 +22,14 @@
                       Grid.Row="2">
 
             <StackPanel 
-                x:Name="MainPageStackpanel1"
+                x:Name="HypertrophyPushPageStackpanel1"
                 Orientation="Horizontal"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center">
             </StackPanel>
         </ScrollViewer>
         <StackPanel>
-            <Image Source="ms-appx:///Assets/BroFitness.png" Height="200" Margin="10" HorizontalAlignment="Left"/>
+            <Image Source="ms-appx:///Assets/BroFitnessLogo.png" Height="194" Margin="10,10,0,10" HorizontalAlignment="Left" Width="369"/>
         </StackPanel>
 
         <!-- BUTTONS -->
