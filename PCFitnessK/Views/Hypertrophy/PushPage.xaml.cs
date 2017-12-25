@@ -26,5 +26,15 @@ namespace PCFitnessK.Views.Hypertrophy
         {
             this.InitializeComponent();
         }
+
+        private void BackToHypertrophyPage(object sender, RoutedEventArgs e)
+        {
+            Frame.GoBack();
+        }
+
+        private void BackToMainPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
     }
 }

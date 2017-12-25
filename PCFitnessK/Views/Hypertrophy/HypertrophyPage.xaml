@@ -43,7 +43,8 @@
             BorderBrush="#079be3"     
             BorderThickness="5" 
             Background="#3f3f3f" 
-            Foreground="White"/>
+            Foreground="White" 
+            Click="NavigateToPushpage"/>
         
         <Button 
             Margin="523,303,523,365"
@@ -55,7 +56,9 @@
             BorderBrush="#079be3"
             BorderThickness="5" 
             Background="#3f3f3f"
-            Foreground="White"/>
+            Foreground="White"
+            Click="NavigateToPullPage"/>
+        
 
         <Button 
             Margin="523,391,523,277"
@@ -67,7 +70,8 @@
             BorderBrush="#079be3"    
             BorderThickness="5" 
             Background="#3f3f3f"
-            Foreground="White"/>
+            Foreground="White"
+            Click="NavigateToLegsPage"/>
 
         <Button 
             Content="BACK" 
@@ -77,6 +81,7 @@
             Foreground="White"
             BorderBrush="#079be3" 
             BorderThickness="5" Height="41" Width="88" 
+            Click="NavigateBack"
             />
 
     </Grid>

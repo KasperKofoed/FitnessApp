@@ -27,9 +27,29 @@ namespace PCFitnessK.Views
             this.InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void NavigateToPushPage(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(Views.Power.PushPage), null);
 
         }
+
+        private void NavigateToPullPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.Power.PullPage), null);
+
+        }
+
+        private void NavigateToLegsPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.Power.LegsPage), null);
+
+        }
+
+        private void NavigateBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
+
+
     }
 }

@@ -27,9 +27,14 @@ namespace PCFitnessK
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NavigateToHyperTrophyPage(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(Views.HypertrophyPage), null);
+        }
 
+        private void NavigateToPowerPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.PowerPage), null);
         }
 
     }

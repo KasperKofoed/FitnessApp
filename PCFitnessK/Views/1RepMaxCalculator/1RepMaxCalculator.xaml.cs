@@ -31,5 +31,10 @@ namespace PCFitnessK.Views._1RepMaxCalculator
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.GoBack();
+        }
     }
 }
