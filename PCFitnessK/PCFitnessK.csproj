@@ -95,6 +95,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\DataStorage\Hypertrophy\HypertrophyData.cs" />
+    <Compile Include="Classes\DataStorage\Power\PowerData.cs" />
+    <Compile Include="Classes\Models\Hypertrophy.cs" />
+    <Compile Include="Classes\Models\Power.cs" />
+    <Compile Include="Classes\ViewModelBase.cs" />
+    <Compile Include="Classes\ViewModels\Hypertrophy\HypertrophyViewModel.cs" />
+    <Compile Include="Classes\ViewModels\Power\PowerViewModel.cs" />
     <Compile Include="Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml.cs">
       <DependentUpon>1RepMaxCalculatorPage.xaml</DependentUpon>
     </Compile>
@@ -196,9 +203,7 @@
       <Version>5.4.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
