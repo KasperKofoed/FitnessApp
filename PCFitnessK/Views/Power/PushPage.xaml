@@ -7,13 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1280">
         <Border BorderBrush="#e5e5e5" BorderThickness="10">
             <Rectangle Fill="#3f3f3f"></Rectangle>
         </Border>
 
         <ScrollViewer 
-                      x:Name="PowerPushPageScrollBar1"
+                      x:Name="PowerPullPageScrollBar1"
                       HorizontalAlignment="Center"
                       VerticalAlignment="Center"
                       Width="auto"
@@ -22,7 +22,7 @@
                       Grid.Row="2">
 
             <StackPanel 
-                x:Name="PowerPushPageStackpanel1"
+                x:Name="PowerPullPageStackpanel1"
                 Orientation="Horizontal"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center">
@@ -40,7 +40,10 @@
             Background="#3f3f3f"
             Foreground="White"
             BorderBrush="#079be3" 
-            BorderThickness="5" Height="41" Width="88" 
+            BorderThickness="5" 
+            Height="41" 
+            Width="88" 
+            Click="NavigateBack"
             />
 
         <Button
@@ -48,7 +51,9 @@
             Margin="1155,47,0,605" 
             Background="#3f3f3f"
             Foreground="White"
-            Height="68" Width="74" 
+            Height="68" 
+            Width="74" 
+            Click="NavigateToMainPage"
             >
             <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6"></Image>
         </Button>

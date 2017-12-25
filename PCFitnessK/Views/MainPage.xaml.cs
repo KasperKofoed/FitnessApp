@@ -37,5 +37,10 @@ namespace PCFitnessK
             this.Frame.Navigate(typeof(Views.PowerPage), null);
         }
 
+        private void NavigateTo1RMCalc(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views._1RepMaxCalculator._1RepMaxCalculatorPage), null);
+        }
+
     }
 }

@@ -95,8 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\1RepMaxCalculator\1RepMaxCalculator.xaml.cs">
-      <DependentUpon>1RepMaxCalculator.xaml</DependentUpon>
+    <Compile Include="Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml.cs">
+      <DependentUpon>1RepMaxCalculatorPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Hypertrophy\HypertrophyPage.xaml.cs">
       <DependentUpon>HypertrophyPage.xaml</DependentUpon>
@@ -150,7 +150,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\1RepMaxCalculator\1RepMaxCalculator.xaml">
+    <Page Include="Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

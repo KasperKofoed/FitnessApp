@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  Width="1280">
         <Border BorderBrush="#e5e5e5" BorderThickness="10">
             <Rectangle Fill="#3f3f3f"></Rectangle>
         </Border>
@@ -59,6 +59,19 @@
             Background="#3f3f3f"
             Foreground="White"
             Click="NavigateToHyperTrophyPage"/>
+        
+            <Button 
+            Margin="523,459,523,209"
+            Content="1RM CALCULATOR" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Height="52" 
+            Width="234" 
+            BorderBrush="#079be3"     
+            BorderThickness="5" 
+            Background="#3f3f3f" 
+            Foreground="White"
+            Click="NavigateTo1RMCalc"/>
 
 
 

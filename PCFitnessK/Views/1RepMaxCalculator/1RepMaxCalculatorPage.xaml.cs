@@ -20,21 +20,17 @@ namespace PCFitnessK.Views._1RepMaxCalculator
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class _1RepMaxCalculator : Page
+    public sealed partial class _1RepMaxCalculatorPage : Page
     {
-        public _1RepMaxCalculator()
+        public _1RepMaxCalculatorPage()
         {
             this.InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void NavigateBack(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(MainPage), null);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.GoBack();
-        }
     }
 }

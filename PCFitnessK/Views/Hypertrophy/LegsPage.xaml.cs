@@ -27,11 +27,15 @@ namespace PCFitnessK.Views.Hypertrophy
             this.InitializeComponent();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private void NavigateBack(object sender, RoutedEventArgs e)
         {
-
+            Frame.GoBack();
         }
 
+        private void NavigateToMainPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage), null);
+        }
 
     }
 }
