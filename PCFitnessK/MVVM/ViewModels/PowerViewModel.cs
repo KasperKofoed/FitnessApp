@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Input;
+using System.Collections.ObjectModel;
 
-namespace PCFitnessK.Classes.ViewModel.Power
+namespace PCFitnessK.Classes.ViewModels
 {
     class PowerViewModel
     {

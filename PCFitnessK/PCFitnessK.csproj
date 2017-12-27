@@ -95,42 +95,42 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Classes\DataStorage\Hypertrophy\HypertrophyData.cs" />
-    <Compile Include="Classes\DataStorage\Power\PowerData.cs" />
-    <Compile Include="Classes\Models\Hypertrophy.cs" />
-    <Compile Include="Classes\Models\Power.cs" />
-    <Compile Include="Classes\ViewModelBase.cs" />
-    <Compile Include="Classes\ViewModels\Hypertrophy\HypertrophyViewModel.cs" />
-    <Compile Include="Classes\ViewModels\Power\PowerViewModel.cs" />
-    <Compile Include="Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml.cs">
+    <Compile Include="DataStorage\HypertrophyData.cs" />
+    <Compile Include="DataStorage\PowerData.cs" />
+    <Compile Include="MVVM\Models\Hypertrophy.cs" />
+    <Compile Include="MVVM\Models\Power.cs" />
+    <Compile Include="MVVM\ViewModels\PowerViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\ViewModelBase.cs" />
+    <Compile Include="MVVM\ViewModels\HypertrophyViewModel.cs" />
+    <Compile Include="MVVM\Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml.cs">
       <DependentUpon>1RepMaxCalculatorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Hypertrophy\HypertrophyPage.xaml.cs">
+    <Compile Include="MVVM\Views\Hypertrophy\HypertrophyPage.xaml.cs">
       <DependentUpon>HypertrophyPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Hypertrophy\LegsPage.xaml.cs">
+    <Compile Include="MVVM\Views\Hypertrophy\LegsPage.xaml.cs">
       <DependentUpon>LegsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Hypertrophy\PullPage.xaml.cs">
+    <Compile Include="MVVM\Views\Hypertrophy\PullPage.xaml.cs">
       <DependentUpon>PullPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Hypertrophy\PushPage.xaml.cs">
+    <Compile Include="MVVM\Views\Hypertrophy\PushPage.xaml.cs">
       <DependentUpon>PushPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
+    <Compile Include="MVVM\Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Power\LegsPage.xaml.cs">
+    <Compile Include="MVVM\Views\Power\LegsPage.xaml.cs">
       <DependentUpon>LegsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Power\PowerPage.xaml.cs">
+    <Compile Include="MVVM\Views\Power\PowerPage.xaml.cs">
       <DependentUpon>PowerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Power\PullPage.xaml.cs">
+    <Compile Include="MVVM\Views\Power\PullPage.xaml.cs">
       <DependentUpon>PullPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Power\PushPage.xaml.cs">
+    <Compile Include="MVVM\Views\Power\PushPage.xaml.cs">
       <DependentUpon>PushPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -157,43 +157,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml">
+    <Page Include="MVVM\Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Hypertrophy\HypertrophyPage.xaml">
+    <Page Include="MVVM\Views\Hypertrophy\HypertrophyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Hypertrophy\LegsPage.xaml">
+    <Page Include="MVVM\Views\Hypertrophy\LegsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Hypertrophy\PullPage.xaml">
+    <Page Include="MVVM\Views\Hypertrophy\PullPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Hypertrophy\PushPage.xaml">
+    <Page Include="MVVM\Views\Hypertrophy\PushPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainPage.xaml">
+    <Page Include="MVVM\Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Power\LegsPage.xaml">
+    <Page Include="MVVM\Views\Power\LegsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Power\PowerPage.xaml">
+    <Page Include="MVVM\Views\Power\PowerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Power\PullPage.xaml">
+    <Page Include="MVVM\Views\Power\PullPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Power\PushPage.xaml">
+    <Page Include="MVVM\Views\Power\PushPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
