@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1280">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border BorderBrush="#e5e5e5" BorderThickness="10">
             <Rectangle Fill="#3f3f3f"></Rectangle>
         </Border>
