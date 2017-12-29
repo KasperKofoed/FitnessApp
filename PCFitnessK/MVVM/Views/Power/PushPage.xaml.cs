@@ -36,5 +36,6 @@ namespace PCFitnessK.Views.Power
         {
             this.Frame.Navigate(typeof(MainPage), null);
         }
+
     }
 }

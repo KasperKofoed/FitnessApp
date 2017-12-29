@@ -7,13 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border BorderBrush="#e5e5e5" BorderThickness="10">
             <Rectangle Fill="#3f3f3f"></Rectangle>
         </Border>
 
         <ScrollViewer 
-                      x:Name="PowerPullPageScrollBar1"
+                      x:Name="PowerLegsPageScrollBar1"
                       HorizontalAlignment="Center"
                       VerticalAlignment="Center"
                       Width="auto"
@@ -22,7 +23,7 @@
                       Grid.Row="2">
 
             <StackPanel 
-                x:Name="PowerPullPageStackpanel1"
+                x:Name="PowerLegsPageStackpanel1"
                 Orientation="Horizontal"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center">
@@ -46,7 +47,7 @@
             Click="NavigateBack"
             />
 
-        <Button
+        <Button 
             HorizontalAlignment="Left" 
             Margin="1155,47,0,605" 
             Background="#3f3f3f"
@@ -58,5 +59,57 @@
             <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6"></Image>
         </Button>
 
+        <Button 
+            Content="GEM" 
+            HorizontalAlignment="Left" 
+            Margin="858,578,0,101" 
+            Background="#3f3f3f"
+            Foreground="White"
+            BorderBrush="#079be3" 
+            BorderThickness="5" Height="41" Width="88" 
+            />
+
+
+        <!--Text elements-->
+        <StackPanel Orientation="Vertical" Margin="330,175,676,-270">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="DEADLIFT" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="WIDE PULLDOWN" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="CLOSE PULLDOWN" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="SEATED ROWS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="STR8 ARM PLDOWN" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="ONE ARM ROWS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="BICEP CURLS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="PREACHER CURLS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="672,175,334,-270">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="5x5" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <ListView Height="100"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="539,175,467,-270">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="4x12" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <ListView Height="100"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="813,175,193,-270">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="1RM" VerticalAlignment="Top" Foreground="White" FontSize="22" />
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
+            <ListView Height="100"/>
+        </StackPanel>
+
+
+
     </Grid>
 </Page>
+
