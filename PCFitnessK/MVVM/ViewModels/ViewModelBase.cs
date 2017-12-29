@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace MVVMDemo
+namespace PCFitnessK.MVVM.ViewModels
 {
     public class ViewModelBase : INotifyPropertyChanged
     {

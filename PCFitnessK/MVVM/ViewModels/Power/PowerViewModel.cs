@@ -5,9 +5,9 @@ using System.Text;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 
-namespace PCFitnessK.Classes.ViewModels
+namespace PCFitnessK.MVVM.ViewModels.Power
 {
-    class PowerViewModel
+    public class PowerViewModel : ViewModelBase
     {
     }
 }

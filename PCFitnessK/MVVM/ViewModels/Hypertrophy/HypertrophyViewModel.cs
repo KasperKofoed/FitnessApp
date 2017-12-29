@@ -5,9 +5,10 @@ using System.Text;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 
-namespace PCFitnessK.Classes.ViewModels
+namespace PCFitnessK.MVVM.ViewModels.Hypertrophy
 {
-    class HypertrophyViewModel 
+    class HypertrophyViewModel : ViewModelBase
     {
+
     }
 }
