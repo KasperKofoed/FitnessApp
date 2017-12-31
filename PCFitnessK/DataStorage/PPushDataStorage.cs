@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCFitnessK.DataStorage
 {
-    class PPushDataStorage
+    public class PPushDataStorage
     {
     }
 }

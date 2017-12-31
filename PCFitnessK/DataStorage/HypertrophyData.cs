@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PCFitnessK.Classes.DataStorage.Hypertrophy
+namespace PCFitnessK.DataStorage
 {
-    class HypertrophyData
+    public class HypertrophyData
     {
     }
 }
