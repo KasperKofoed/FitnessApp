@@ -24,10 +24,10 @@ namespace PCFitnessK.MVVM.ViewModels.Power
         public PowerData DataStorage { get { return _dataStorage;} set { value = _dataStorage; } }
 
 
-        private string ItemIsSelected
-        {
+        //private string ItemIsSelected
+        //{
 
-        }
+        //}
 
     }
 }
