@@ -95,9 +95,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataStorage\HLegsDataStorage.cs" />
     <Compile Include="DataStorage\HPullDataStorage.cs" />
+    <Compile Include="DataStorage\HPushDataStorage.cs" />
     <Compile Include="DataStorage\HypertrophyData.cs" />
+    <Compile Include="DataStorage\PLegsDataStorage.cs" />
     <Compile Include="DataStorage\PowerData.cs" />
+    <Compile Include="DataStorage\PPullDataStorage.cs" />
+    <Compile Include="DataStorage\PPushDataStorage.cs" />
     <Compile Include="MVVM\Command\ICommand.cs" />
     <Compile Include="MVVM\Models\Hypertrophy\Hypertrophy.cs" />
     <Compile Include="MVVM\Models\Hypertrophy\HypertrophyLegs.cs" />
@@ -108,9 +113,14 @@
     <Compile Include="MVVM\Models\Power\PowerPull.cs" />
     <Compile Include="MVVM\Models\Power\PowerPush.cs" />
     <Compile Include="MVVM\Command\RelayCommand.cs" />
+    <Compile Include="MVVM\ViewModels\Hypertrophy\HLegsViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPullPageViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\Hypertrophy\HPushViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\Power\PLegsViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Power\PowerViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HypertrophyViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\Power\PPullViewModel.cs" />
+    <Compile Include="MVVM\ViewModels\Power\PPushViewModel.cs" />
     <Compile Include="MVVM\ViewModels\ViewModelBase.cs" />
     <Compile Include="MVVM\Views\1RepMaxCalculator\1RepMaxCalculatorPage.xaml.cs">
       <DependentUpon>1RepMaxCalculatorPage.xaml</DependentUpon>
