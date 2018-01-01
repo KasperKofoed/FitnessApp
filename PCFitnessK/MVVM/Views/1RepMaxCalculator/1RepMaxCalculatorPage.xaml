@@ -3,70 +3,112 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:PCFitnessK.Views._1RepMaxCalculator"
+    xmlns:vm="using:PCFitnessK.MVVM.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.DataContext>
+        <vm:_1RepMaxCalcViewModel/>
+    </Page.DataContext>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Border BorderBrush="#e5e5e5" BorderThickness="10">
-            <Rectangle Fill="#3f3f3f"></Rectangle>
-        </Border>
+    <Grid Background="#FF131313">
 
-        <ScrollViewer 
-                      x:Name="HypertrophyPageScrollBar1"
-                      HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      Width="auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      VerticalScrollBarVisibility="Hidden"
-                      Grid.Row="2">
-
-            <StackPanel 
-                x:Name="HypertrophyPageStackpanel1"
-                Orientation="Horizontal"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center">
-            </StackPanel>
-        </ScrollViewer>
-        <StackPanel>
-            <Image Source="ms-appx:///Assets/BroFitnessLogo.png" Height="194" Margin="10,10,0,10" HorizontalAlignment="Left" Width="369"/>
-        </StackPanel>
-
-        <!-- BUTTONS -->
-        <Button 
-            Content="BACK" 
+        <StackPanel
             HorizontalAlignment="Left" 
-            Margin="105,578,0,101" 
-            Background="#3f3f3f"
+            Height="917" 
+            Width="505" 
+            VerticalAlignment="Top" 
+            Background="#FF191919" 
+            Margin="0,153,0,0">
+
+          
+            <Button 
+            Margin="0,650,0,0"
+            Content="BACK" 
+            HorizontalAlignment="Center" 
+            Background="#FF191919"
             Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" 
             Height="41" 
-            Width="88" 
-            Click="NavigateBack" 
+            Width="495" 
+            Click="NavigateBack"
             />
 
+        </StackPanel>
 
-        <!--Text elements-->
-        <StackPanel Orientation="Vertical" Margin="330,175,676,-270">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15,15,0,15" Text="Calculate Your 1 Rep Max" VerticalAlignment="Top" Foreground="White" FontSize="30" Width="256" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15,15,0,15" Text="Select Rep Range to calculate from:" VerticalAlignment="Top" Foreground="White" FontSize="22" Width="256" />
-            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="274">
-                <ComboBoxItem Content="5 Reps" Height="100" Width="100"/>
-                <ComboBoxItem Content="8 Reps" Height="100" Width="100"/>
-                <ComboBoxItem Content="10 Reps" Height="100" Width="100"/>
-            </ComboBox>
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="158" 
+            VerticalAlignment="Top" 
+            Background="#FF191919">
+            <Image Source="ms-appx:///Assets/LogoFinalEdit.png" Height="160" Width="505"/>
+
+
+        </StackPanel>
+
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="266" 
+            Margin="480,0,0,0" 
+            VerticalAlignment="Top" 
+            Width="1440" 
+            Background="#FF191919">
+
+            <Button 
+            HorizontalAlignment="Left" 
+            Margin="1155,47,0,605" 
+            Background="#3f3f3f"
+            Foreground="White"
+            Height="68" 
+            Width="74" 
+            Click="NavigateBack"
+            >
+                <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6" HorizontalAlignment="Left" Width="80" Height="80"></Image>
+            </Button>
+
 
         </StackPanel>
 
 
-        <StackPanel Orientation="Vertical" Margin="610,300,396,13">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="Your 1 Rep Max:" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
 
+
+
+        <StackPanel Orientation="Vertical" Margin="543,313,463,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Yeeet" VerticalAlignment="Top" Height="22"/>
+            
         </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Height="22"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+        
+
+            <Button 
+            Content="GEM" 
+            Margin="150,0,0,0"
+            HorizontalAlignment="Left"
+            Background="#131313"
+            Foreground="White"
+            BorderBrush="#FF191919"
+            BorderThickness="5"
+            Height="41" Width="134" 
+            />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="724,313,282,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Reps" VerticalAlignment="Top" Height="22"/>
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+        </StackPanel>
+
+
+
+
+
+
+
 
     </Grid>
 </Page>
+
+
 

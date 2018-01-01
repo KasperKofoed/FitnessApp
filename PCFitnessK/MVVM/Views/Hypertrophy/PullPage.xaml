@@ -12,85 +12,73 @@
         <vm:HPullPageViewModel/>
     </Page.DataContext>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Border BorderBrush="#e5e5e5" BorderThickness="10">
-            <Rectangle Fill="#3f3f3f"></Rectangle>
-        </Border>
+
+    <Grid Background="#FF131313">
+
+        <StackPanel
+            HorizontalAlignment="Left" 
+            Height="917" 
+            Width="505" 
+            VerticalAlignment="Top" 
+            Background="#FF191919" 
+            Margin="0,153,0,0">
+
+            <Image Source="ms-appx:///Assets/BackLogo.png" Height="100" Margin="1,115"></Image>
+
+
+            <Button 
+            Margin="0,300,0,0"
+            Content="BACK" 
+            HorizontalAlignment="Center" 
+            Background="#FF191919"
+            Foreground="White"
+            Height="41" 
+            Width="495" 
+            Click="BackToHypertrophyPage"
+            />
+
+        </StackPanel>
 
         <StackPanel 
-                x:Name="PowerLegsPageStackpanel1"
-                Orientation="Horizontal"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center">
+            HorizontalAlignment="Left" 
+            Height="158" 
+            VerticalAlignment="Top" 
+            Background="#FF191919">
+            <Image Source="ms-appx:///Assets/LogoFinalEdit.png" Height="160" Width="505"/>
+
+
         </StackPanel>
 
-        <StackPanel>
-            <Image Source="ms-appx:///Assets/BroFitnessLogo.png" Height="194" Margin="10,10,0,10" HorizontalAlignment="Left" Width="369"/>
-        </StackPanel>
-
-        <!-- BUTTONS -->
-        <Button 
-            Content="BACK" 
+        <StackPanel 
             HorizontalAlignment="Left" 
-            Margin="105,578,0,101" 
-            Background="#3f3f3f"
-            Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" 
-            Height="41" 
-            Width="88" 
-            Click="BackToHypertrophyPage"/>
+            Height="266" 
+            Margin="480,0,0,0" 
+            VerticalAlignment="Top" 
+            Width="1440" 
+            Background="#FF191919">
 
-        <Button 
+            <Button 
             HorizontalAlignment="Left" 
-            Margin="1321,102,0,910" 
+            Margin="1155,47,0,605" 
             Background="#3f3f3f"
             Foreground="White"
             Height="68" 
             Width="74" 
-            Click="BackToMainPage">
-            <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6"></Image>
-        </Button>
+            Click="BackToMainPage"
+            >
+                <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6" HorizontalAlignment="Left" Width="80" Height="80"></Image>
+            </Button>
 
-        <Button 
-            Content="GEM" 
-            HorizontalAlignment="Left" 
-            Margin="1307,758,0,281" 
-            Background="#3f3f3f"
-            Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" 
-            Height="41" 
-            Width="88"/>
 
-        <!--TEXT ELEMENTS-->
-        <StackPanel Orientation="Vertical" Margin="363,205,1444,469">
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-            <ComboBox Margin="5" Background="DimGray" />
-        </StackPanel>                                                                                           
-
-        <StackPanel Orientation="Vertical" Margin="481,205,1295,448">
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.2DeficitDeadlift}" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
         </StackPanel>
 
-        <StackPanel Margin="201,205,1547,448">
-            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="2'' Deficit Deadlift" VerticalAlignment="Top" Height="22"/>
-            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Sumo Deadlift" VerticalAlignment="Top" Height="22"/>
+
+
+
+
+        <StackPanel Orientation="Vertical" Margin="543,313,463,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Deadlift" VerticalAlignment="Top" Height="22"/>
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Wide Grip Pulldown" VerticalAlignment="Top" Height="22"/>
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Close Grip Pulldown" VerticalAlignment="Top" Height="22"/>
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="One Arm Cable Rows" VerticalAlignment="Top" Height="22"/>
@@ -100,12 +88,64 @@
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Preacher Curls" VerticalAlignment="Top" Height="22"/>
         </StackPanel>
 
-        <Grid>
-            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="682,270,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Height="22"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="682,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="461" RenderTransformOrigin="5.653,7.062"/>
-            <GridView Margin="682,343,777,502" Background="DimGray" Opacity="1" BorderBrush="Black" BorderThickness="2"/>
-        </Grid>
+        <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Height="22"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+
+
+            <Button 
+            Content="GEM" 
+            Margin="150,0,0,0"
+            HorizontalAlignment="Left"
+            Background="#131313"
+            Foreground="White"
+            BorderBrush="#FF191919"
+            BorderThickness="5"
+            Height="41" Width="134" 
+            />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="724,313,282,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Reps" VerticalAlignment="Top" Height="22"/>
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+
+        </StackPanel>
+
+        <StackPanel Margin="1119,367,340,41">
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" TextWrapping="Wrap" Text="Search..." VerticalAlignment="Top" Width="461" RenderTransformOrigin="5.653,7.062"/>
+            <ListView Height="232"  Background="DimGray" Opacity="1" BorderBrush="Black" BorderThickness="2"></ListView>
+
+            <Button 
+            Content="Search" 
+            HorizontalAlignment="Right"
+            Background="#131313"
+            Foreground="White"
+            BorderBrush="#FF191919"
+            BorderThickness="5"
+            Height="41" Width="134" 
+            />
+        </StackPanel>
+
+
+
+
+
+
+
 
     </Grid>
 </Page>
-
