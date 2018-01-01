@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataStorage\1RepMaxCalcDataStorage.cs" />
     <Compile Include="DataStorage\HLegsDataStorage.cs" />
     <Compile Include="DataStorage\HPullDataStorage.cs" />
     <Compile Include="DataStorage\HPushDataStorage.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="MVVM\Models\Power\PowerPull.cs" />
     <Compile Include="MVVM\Models\Power\PowerPush.cs" />
     <Compile Include="MVVM\Command\RelayCommand.cs" />
+    <Compile Include="MVVM\ViewModels\1RepMaxCalcViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HLegsViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPullPageViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPushViewModel.cs" />
@@ -160,9 +162,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\BroFitness.png" />
-    <Content Include="Assets\BroFitnessLogo.png" />
+    <Content Include="Assets\BackLogo.png" />
+    <Content Include="Assets\ChestLogo.png" />
     <Content Include="Assets\HomeIcon.png" />
+    <Content Include="Assets\LegsLogo.png" />
+    <Content Include="Assets\LogoFinalEdit.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

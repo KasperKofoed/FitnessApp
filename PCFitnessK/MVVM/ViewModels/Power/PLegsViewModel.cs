@@ -15,7 +15,7 @@ namespace PCFitnessK.MVVM.ViewModels.Power
 
         public PLegsViewModel()
         {
-            _repRange = new List<int>() { 8, 12, 15 };
+            _repRange = new List<int>() { 1, 5, 8, 12, 15 };
             _dataStorage = new PLegsDataStorage();
         }
 

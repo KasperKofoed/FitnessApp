@@ -16,7 +16,7 @@ namespace PCFitnessK.MVVM.ViewModels.Power
 
         public PPullViewModel()
         {
-            _repRange = new List<int>() { 8, 12, 15 };
+            _repRange = new List<int>() { 1, 5, 8, 12, 15 };
             _dataStorange = new PPullDataStorage();
         }
 

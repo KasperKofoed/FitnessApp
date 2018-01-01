@@ -7,84 +7,77 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Border BorderBrush="#e5e5e5" BorderThickness="10">
-            <Rectangle Fill="#3f3f3f"></Rectangle>
-        </Border>
+    <Grid Background="#FF131313">
 
-        <ScrollViewer 
-                      x:Name="PowerPageScrollBar1"
-                      HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      Width="auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      VerticalScrollBarVisibility="Hidden"
-                      Grid.Row="2">
+        <StackPanel
+            HorizontalAlignment="Left" 
+            Height="917" 
+            Width="505" 
+            VerticalAlignment="Top" 
+            Background="#FF191919" 
+            Margin="0,153,0,0">
 
-            <StackPanel 
-                x:Name="PowerPageStackpanel1"
-                Orientation="Horizontal"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center">
-            </StackPanel>
-        </ScrollViewer>
-        <StackPanel>
-            <Image Source="ms-appx:///Assets/BroFitnessLogo.png" Height="194" Margin="10,10,0,10" HorizontalAlignment="Left" Width="369"/>
-        </StackPanel>
-
-        <!-- BUTTONS -->
-        <Button 
-            Margin="523,211,523,457"
-            Content="PUSH" 
+            <Button 
+            Margin="10,115,0,10"
+            Content="Push" 
             HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
             Height="52" 
-            Width="234" 
-            BorderBrush="#079be3"     
-            BorderThickness="5" 
-            Background="#3f3f3f" 
+            Width="485" 
+            Background="#FF191919" 
             Foreground="White"
             Click="NavigateToPushPage"/>
 
-        <Button 
-            Margin="523,303,523,365"
-            Content="PULL"
+            <Button 
+            Margin="10,10,0,10"
+            Content="Pull"
             HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
             Height="52" 
-            Width="234" 
-            BorderBrush="#079be3"
-            BorderThickness="5" 
-            Background="#3f3f3f"
+            Width="485" 
+            Background="#FF191919"
             Foreground="White"
             Click="NavigateToPullPage"/>
 
-        <Button 
-            Margin="523,391,523,277"
-            Content="LEGS" 
+            <Button 
+            Margin="10,10,0,10"
+            Content="Legs" 
             HorizontalAlignment="Center" 
-            VerticalAlignment="Center" 
             Height="52" 
-            Width="234" 
-            BorderBrush="#079be3"    
-            BorderThickness="5" 
-            Background="#3f3f3f"
+            Width="485" 
+            Background="#FF191919" 
             Foreground="White"
             Click="NavigateToLegsPage"/>
 
-        <Button 
+            <Button 
+            Margin="0,280,0,0"
             Content="BACK" 
-            HorizontalAlignment="Left" 
-            Margin="105,578,0,101" 
-            Background="#3f3f3f"
+            HorizontalAlignment="Center" 
+            Background="#FF191919"
             Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" 
             Height="41" 
-            Width="88" 
-            Click="NavigateBack" 
+            Width="495" 
+            Click="NavigateBack"
             />
+        </StackPanel>
 
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="158" 
+            VerticalAlignment="Top" 
+            Background="#FF191919">
+            <Image Source="ms-appx:///Assets/LogoFinalEdit.png" Height="160" Width="505"/>
+
+
+        </StackPanel>
+
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="266" 
+            Margin="480,0,0,0" 
+            VerticalAlignment="Top" 
+            Width="1440" 
+            Background="#FF191919"
+            
+            />
 
 
     </Grid>

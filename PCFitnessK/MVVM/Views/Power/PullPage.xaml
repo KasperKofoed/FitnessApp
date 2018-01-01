@@ -8,46 +8,52 @@
     mc:Ignorable="d">
 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Border BorderBrush="#e5e5e5" BorderThickness="10">
-            <Rectangle Fill="#3f3f3f"></Rectangle>
-        </Border>
 
-        <ScrollViewer 
-                      x:Name="PowerLegsPageScrollBar1"
-                      HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      Width="auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      VerticalScrollBarVisibility="Hidden"
-                      Grid.Row="2">
+    <Grid Background="#FF131313">
 
-            <StackPanel 
-                x:Name="PowerLegsPageStackpanel1"
-                Orientation="Horizontal"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center">
-            </StackPanel>
-        </ScrollViewer>
-        <StackPanel>
-            <Image Source="ms-appx:///Assets/BroFitnessLogo.png" Height="194" Margin="10,10,0,10" HorizontalAlignment="Left" Width="369"/>
-        </StackPanel>
-
-        <!-- BUTTONS -->
-        <Button 
-            Content="BACK" 
+        <StackPanel
             HorizontalAlignment="Left" 
-            Margin="105,578,0,101" 
-            Background="#3f3f3f"
+            Height="917" 
+            Width="505" 
+            VerticalAlignment="Top" 
+            Background="#FF191919" 
+            Margin="0,153,0,0">
+
+            <Image Source="ms-appx:///Assets/BackLogo.png" Height="100" Margin="1,115"></Image>
+                   
+
+            <Button 
+            Margin="0,300,0,0"
+            Content="BACK" 
+            HorizontalAlignment="Center" 
+            Background="#FF191919"
             Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" 
             Height="41" 
-            Width="88" 
+            Width="495" 
             Click="NavigateBack"
             />
 
-        <Button 
+        </StackPanel>
+
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="158" 
+            VerticalAlignment="Top" 
+            Background="#FF191919">
+            <Image Source="ms-appx:///Assets/LogoFinalEdit.png" Height="160" Width="505"/>
+
+
+        </StackPanel>
+
+        <StackPanel 
+            HorizontalAlignment="Left" 
+            Height="266" 
+            Margin="480,0,0,0" 
+            VerticalAlignment="Top" 
+            Width="1440" 
+            Background="#FF191919">
+
+            <Button 
             HorizontalAlignment="Left" 
             Margin="1155,47,0,605" 
             Background="#3f3f3f"
@@ -56,67 +62,69 @@
             Width="74" 
             Click="NavigateToMainPage"
             >
-            <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6"></Image>
-        </Button>
+                <Image Source="ms-appx:///Assets/HomeIcon.png" Margin="-37,-6" HorizontalAlignment="Left" Width="80" Height="80"></Image>
+            </Button>
 
-        <Button 
+
+        </StackPanel>
+
+
+
+
+
+        <StackPanel Orientation="Vertical" Margin="543,313,463,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Deadlift" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Wide Grip Pulldown" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Close Grip Pulldown" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="One Arm Cable Rows" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Wide Grip Cable Rows" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Straight Arm Pull Down" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Rear Delt Band" VerticalAlignment="Top" Height="22"/>
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Preacher Curls" VerticalAlignment="Top" Height="22"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Height="22"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.2DeficitDeadlift}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+
+
+            <Button 
             Content="GEM" 
-            HorizontalAlignment="Left" 
-            Margin="858,578,0,101" 
-            Background="#3f3f3f"
+            Margin="150,0,0,0"
+            HorizontalAlignment="Left"
+            Background="#131313"
             Foreground="White"
-            BorderBrush="#079be3" 
-            BorderThickness="5" Height="41" Width="88" 
+            BorderBrush="#FF191919"
+            BorderThickness="5"
+            Height="41" Width="134" 
             />
-
-
-        <!--Text elements-->
-        <StackPanel Orientation="Vertical" Margin="330,175,676,-270">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15,15,0,15" Text="BENCH" VerticalAlignment="Top" Foreground="White" FontSize="22" Width="103" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="INCLINE BENCH" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="OVERHEAD PRESS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="MACHINE PRESS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="CABLE FLYERS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="TRICEPS EXTENSION" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="TRICEPS ROPE EXT " VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="REAR DELT CABLE" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="SEATED DIPS" VerticalAlignment="Top" Foreground="White" FontSize="22" />
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Margin="672,175,334,-270">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="5x5" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            
-            
+        <StackPanel Orientation="Vertical" Margin="724,313,282,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Reps" VerticalAlignment="Top" Height="22"/>
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
+            <ComboBox Margin="5" Background="DimGray" />
 
-            <ListView Height="100"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Margin="539,175,467,-270">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="4x12" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <ListView Height="100"/>
-        </StackPanel>
 
-        <StackPanel Orientation="Vertical" Margin="813,175,193,-270">
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="15" Text="1RM" VerticalAlignment="Top" Foreground="White" FontSize="22" />
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="14,14,0,14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
 
-            <ListView Height="100"/>
-        </StackPanel>
+
+
 
 
 
