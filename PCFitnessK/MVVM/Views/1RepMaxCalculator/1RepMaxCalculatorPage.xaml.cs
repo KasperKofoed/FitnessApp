@@ -32,5 +32,9 @@ namespace PCFitnessK.Views._1RepMaxCalculator
             this.Frame.Navigate(typeof(MainPage), null);
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

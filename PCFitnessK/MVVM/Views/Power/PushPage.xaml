@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:PPullViewModel/>
+        <vm:PPushViewModel/>
     </Page.DataContext>
 
     <Grid Background="#FF131313">
@@ -88,7 +88,7 @@
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Rear Delt Machine" VerticalAlignment="Top" Height="22"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
+        <StackPanel Orientation="Vertical" Margin="904,313,102,-408">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Height="22"/>
             <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
             <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
@@ -110,6 +110,19 @@
             BorderThickness="5"
             Height="41" Width="134" 
             />
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
+            <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Sets" VerticalAlignment="Top" Height="22"/>
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets }" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Margin="724,313,282,-408">

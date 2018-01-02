@@ -114,7 +114,8 @@
     <Compile Include="MVVM\Models\Power\PowerPull.cs" />
     <Compile Include="MVVM\Models\Power\PowerPush.cs" />
     <Compile Include="MVVM\Command\RelayCommand.cs" />
-    <Compile Include="MVVM\ViewModels\1RepMaxCalcViewModel.cs" />
+    <Compile Include="MVVM\RepMaxCalculator.cs" />
+    <Compile Include="MVVM\ViewModels\OneRepMaxCalcViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HLegsViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPullPageViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPushViewModel.cs" />
