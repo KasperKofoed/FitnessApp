@@ -95,7 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataStorage\1RepMaxCalcDataStorage.cs" />
+    <Compile Include="DataStorage\RepMaxCalcDataStorage.cs" />
     <Compile Include="DataStorage\HLegsDataStorage.cs" />
     <Compile Include="DataStorage\HPullDataStorage.cs" />
     <Compile Include="DataStorage\HPushDataStorage.cs" />

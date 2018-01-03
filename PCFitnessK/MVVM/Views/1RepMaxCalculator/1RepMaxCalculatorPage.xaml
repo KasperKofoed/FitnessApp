@@ -65,7 +65,7 @@
 
         <StackPanel Orientation="Vertical" Margin="543,313,463,588">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Select Rep Range:" VerticalAlignment="Top" Height="22"/>
-            <ComboBox HorizontalAlignment="Left" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="" Width="180"  />
+            <ComboBox HorizontalAlignment="Left" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding SelectedRep, Mode=TwoWay}" Width="180"  />
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Margin="543,418,481,505">
