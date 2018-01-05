@@ -104,7 +104,6 @@
     <Compile Include="DataStorage\PowerData.cs" />
     <Compile Include="DataStorage\PPullDataStorage.cs" />
     <Compile Include="DataStorage\PPushDataStorage.cs" />
-    <Compile Include="MVVM\Command\ICommand.cs" />
     <Compile Include="MVVM\Models\Hypertrophy\Hypertrophy.cs" />
     <Compile Include="MVVM\Models\Hypertrophy\HypertrophyLegs.cs" />
     <Compile Include="MVVM\Models\Hypertrophy\HypertrophyPull.cs" />
