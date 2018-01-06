@@ -17,8 +17,17 @@ namespace PCFitnessK.DataStorage
 
         }
 
-        public int CalculateRepRange { get { return _repRange; } set { _repRange = value ; } }
-        public double CalculateWeightUsed { get { return _weightUsed; } set { _weightUsed = value ; OnPropertyChanged(nameof(CalculateWeightUsed)); } }
+        public int CalculateRepRange
+        {
+            get { return _repRange; }
+            set { _repRange = value; OnPropertyChanged(); }
+        }
+
+        public double CalculateWeightUsed
+        {
+            get { return _weightUsed; }
+            set { _weightUsed = value; OnPropertyChanged(); }
+        }
 
     }
 }
