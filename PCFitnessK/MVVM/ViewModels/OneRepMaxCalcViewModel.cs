@@ -14,29 +14,24 @@ namespace PCFitnessK.MVVM.ViewModels
         private RepMaxCalcDataStorage _dataStorage;
         private int _ItemIsSelected;
 
-
         public OneRepMaxCalcViewModel ()
         {
             _repRange = new List<double>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
             _dataStorage = new RepMaxCalcDataStorage();
         }
 
-        public List<double> GetRepRange { get { return _repRange; } set { value = _repRange; } }
-        public RepMaxCalcDataStorage DataStorage { get { return _dataStorage; } set { value = _dataStorage; } }
+        public List<double> GetRepRange { get { return _repRange; } set { _repRange = value; } }
+        public RepMaxCalcDataStorage DataStorage { get { return _dataStorage; } set { _dataStorage = value ; } }
         public int SelectedRep
         {
             get { return _ItemIsSelected; }
             set
             {
-                _dataStorage.CalculateRepRange = value;
+                _dataStorage.CalculateRepRange = value ;
                 _ItemIsSelected = value;
                 OnPropertyChanged(nameof(RepMaxCalcDataStorage));
             }
         }
-        public double WeightUsed { get { return _dataStorage.CalculateWeightUsed; } set { value = _dataStorage.CalculateWeightUsed; } }
-
-
-
     }
 }
 

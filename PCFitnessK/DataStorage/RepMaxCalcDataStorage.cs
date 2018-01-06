@@ -12,8 +12,13 @@ namespace PCFitnessK.DataStorage
         private int _repRange;
         private double _weightUsed;
 
-        public int CalculateRepRange { get { return _repRange; } set { value = _repRange; } }
-        public double CalculateWeightUsed { get { return _weightUsed; } set { value = _weightUsed; } }
+        public RepMaxCalcDataStorage()
+        {
+
+        }
+
+        public int CalculateRepRange { get { return _repRange; } set { _repRange = value ; } }
+        public double CalculateWeightUsed { get { return _weightUsed; } set { _weightUsed = value ; OnPropertyChanged(nameof(CalculateWeightUsed)); } }
 
     }
 }
