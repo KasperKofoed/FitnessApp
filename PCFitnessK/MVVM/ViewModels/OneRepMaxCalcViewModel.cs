@@ -15,11 +15,6 @@ namespace PCFitnessK.MVVM.ViewModels
         private RepMaxCalcDataStorage _dataStorage;
         private RelayCommand _relayCommand;
         private double _calculationResults;
-        private double _calculationResults90;
-        private double _calculationResults80;
-        private double _calculationResults75;
-        private double _calculationResults65;
-
 
         public OneRepMaxCalcViewModel ()
         {
