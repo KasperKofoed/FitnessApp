@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PCFitnessK.MVVM.Models.Hypertrophy
+namespace PCFitnessK.MVVM.Models
 {
-    class HypertrophyPull
-    {
+        public interface IKey
+        {
+            int Key { get; set; }
+        }
     }
-}

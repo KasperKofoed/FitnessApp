@@ -15,6 +15,10 @@ namespace PCFitnessK.MVVM.ViewModels
         private RepMaxCalcDataStorage _dataStorage;
         private RelayCommand _relayCommand;
         private double _calculationResults;
+        private double _calculationResults90;
+        private double _calculationResults80;
+        private double _calculationResults75;
+        private double _calculationResults65;
 
         public OneRepMaxCalcViewModel ()
         {
@@ -57,10 +61,28 @@ namespace PCFitnessK.MVVM.ViewModels
             set { _calculationResults = value; OnPropertyChanged(); }
         }
 
+        public double Get90PercentResults { get { return _calculationResults90; } set { _calculationResults90 = value; } }
+
+        public double Get80PercentResults { get { return _calculationResults80; } set { _calculationResults80 = value; } }
+
+        public double Get75PercentResults { get { return _calculationResults75; } set { _calculationResults75 = value; } }
+
+        public double Get65PercentResults { get { return _calculationResults65; } set { _calculationResults65 = value; } }
+
+
+
         public void CalculateMax()
         {
             _calculationResults = (DataStorage.CalculateWeightUsed * DataStorage.CalculateRepRange * 0.033) + DataStorage.CalculateWeightUsed;
             OnPropertyChanged(nameof(GetResults));
+            _calculationResults90 = 0.90 * _calculationResults;
+            OnPropertyChanged(nameof(Get90PercentResults));
+            _calculationResults80 = 0.80 * _calculationResults;
+            OnPropertyChanged(nameof(Get80PercentResults));
+            _calculationResults75 = 0.75 * _calculationResults;
+            OnPropertyChanged(nameof(Get75PercentResults));
+            _calculationResults65 = 0.65 * _calculationResults;
+            OnPropertyChanged(nameof(Get65PercentResults));
         }
     }
 }

@@ -89,12 +89,12 @@
 
         <StackPanel Orientation="Vertical" Margin="904,313,102,-408">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Height="22"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
-            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightSquat, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightLegPress, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightLunge, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightHamstringCurl, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightQuadExtension, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
+            <TextBox HorizontalAlignment="Left" Background="#e5e5e5" Margin="5" TextWrapping="Wrap" Text="{Binding DataStorage.WeightOuterThighPress, Mode=TwoWay}" VerticalAlignment="Top" Width="118"/>
 
             <Button 
             Content="GEM" 
@@ -110,22 +110,22 @@
 
         <StackPanel Orientation="Vertical" Margin="814,313,192,-408">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Sets" VerticalAlignment="Top" Height="22"/>
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets }" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets }" SelectedItem="{Binding DataStorage.ItemSelectedSquatSets, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}"  SelectedItem="{Binding DataStorage.ItemSelectedLegPressSets, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}"  SelectedItem="{Binding DataStorage.ItemSelectedLungesSets, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}"  SelectedItem="{Binding DataStorage.ItemSelectedHamstringCurlSets, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}"  SelectedItem="{Binding DataStorage.ItemSelectedQuadExtensionsSets, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetSets}"  SelectedItem="{Binding DataStorage.ItemSelectedOuterThighPressSets, Mode=TwoWay}"  />
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Margin="724,313,282,-408">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="10" TextWrapping="Wrap" Text="Reps" VerticalAlignment="Top" Height="22"/>
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
-            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem=""  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedSquatReps, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedLegPressReps, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedLungesReps, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedHamstringCurlReps, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedQuadExtensionsReps, Mode=TwoWay}"  />
+            <ComboBox Margin="5" Background="DimGray" ItemsSource="{Binding GetRepRange}" SelectedItem="{Binding DataStorage.ItemSelectedOuterThighPressReps, Mode=TwoWay}"  />
         </StackPanel>
 
 

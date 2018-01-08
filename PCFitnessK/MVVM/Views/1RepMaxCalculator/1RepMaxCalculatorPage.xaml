@@ -93,16 +93,16 @@
 
         <StackPanel HorizontalAlignment="Left" Height="187" Margin="616,575,0,0" VerticalAlignment="Top" Width="192">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="0,5" TextWrapping="Wrap" Text="90%" VerticalAlignment="Top" Height="22"/>
-            <TextBox x:Name="calcTextboxShowResult90Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" IsReadOnly="True"/>
+            <TextBox x:Name="calcTextboxShowResult90Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="{Binding Get90PercentResults}" VerticalAlignment="Top" Width="180" IsReadOnly="True"/>
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="0,5" TextWrapping="Wrap" Text="75%" VerticalAlignment="Top" Height="22"/>
-            <TextBox x:Name="calcTextboxShowResult75Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" IsReadOnly="True" />
+            <TextBox x:Name="calcTextboxShowResult75Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="{Binding Get75PercentResults}" VerticalAlignment="Top" Width="180" IsReadOnly="True" />
         </StackPanel>
         
         <StackPanel HorizontalAlignment="Left" Height="187" Margin="813,575,0,0" VerticalAlignment="Top" Width="192">
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="0,5" TextWrapping="Wrap" Text="80%" VerticalAlignment="Top" Height="22"/>
-            <TextBox x:Name="calcTextboxShowResult80Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" IsReadOnly="True"/>
+            <TextBox x:Name="calcTextboxShowResult80Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="{Binding Get80PercentResults}" VerticalAlignment="Top" Width="180" IsReadOnly="True"/>
             <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="0,5" TextWrapping="Wrap" Text="65%" VerticalAlignment="Top" Height="22"/>
-            <TextBox x:Name="calcTextboxShowResult65Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" IsReadOnly="True" />
+            <TextBox x:Name="calcTextboxShowResult65Percent" HorizontalAlignment="Left" Margin="0" Background="#e5e5e5" TextWrapping="Wrap" Text="{Binding Get65PercentResults}" VerticalAlignment="Top" Width="180" IsReadOnly="True" />
         </StackPanel>
 
     </Grid>

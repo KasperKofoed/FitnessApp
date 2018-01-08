@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PCFitnessK.MVVM.Models.Power
-{
-    class PowerLegs
-    {
-    }
-}
+//namespace PCFitnessK.Web
+//{
+//    class IDataSources
+//    {
+//    }
+//}

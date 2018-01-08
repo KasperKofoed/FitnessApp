@@ -95,6 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Catalog\Catalog.cs" />
+    <Compile Include="Catalog\WebAPICatalog.cs" />
     <Compile Include="DataStorage\RepMaxCalcDataStorage.cs" />
     <Compile Include="DataStorage\HLegsDataStorage.cs" />
     <Compile Include="DataStorage\HPullDataStorage.cs" />
@@ -104,15 +106,14 @@
     <Compile Include="DataStorage\PowerData.cs" />
     <Compile Include="DataStorage\PPullDataStorage.cs" />
     <Compile Include="DataStorage\PPushDataStorage.cs" />
-    <Compile Include="MVVM\Models\Hypertrophy\Hypertrophy.cs" />
-    <Compile Include="MVVM\Models\Hypertrophy\HypertrophyLegs.cs" />
-    <Compile Include="MVVM\Models\Hypertrophy\HypertrophyPull.cs" />
-    <Compile Include="MVVM\Models\Hypertrophy\HypertrophyPush.cs" />
-    <Compile Include="MVVM\Models\Power\Power.cs" />
-    <Compile Include="MVVM\Models\Power\PowerLegs.cs" />
-    <Compile Include="MVVM\Models\Power\PowerPull.cs" />
-    <Compile Include="MVVM\Models\Power\PowerPush.cs" />
     <Compile Include="MVVM\Command\RelayCommand.cs" />
+    <Compile Include="MVVM\Models\Hypertrophy\HLegsModel.cs" />
+    <Compile Include="MVVM\Models\Hypertrophy\HPullModel.cs" />
+    <Compile Include="MVVM\Models\Hypertrophy\HPushModel.cs" />
+    <Compile Include="MVVM\Models\IKey.cs" />
+    <Compile Include="MVVM\Models\Power\PLegsModel.cs" />
+    <Compile Include="MVVM\Models\Power\PPullModel.cs" />
+    <Compile Include="MVVM\Models\Power\PPushModel.cs" />
     <Compile Include="MVVM\ViewModels\OneRepMaxCalcViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HLegsViewModel.cs" />
     <Compile Include="MVVM\ViewModels\Hypertrophy\HPullPageViewModel.cs" />
@@ -154,6 +155,8 @@
     <Compile Include="MVVM\Views\Power\PushPage.xaml.cs">
       <DependentUpon>PushPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Web\IDataSources.cs" />
+    <Compile Include="Web\WebAPISources.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

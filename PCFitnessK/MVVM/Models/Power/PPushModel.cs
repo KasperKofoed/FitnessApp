@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCFitnessK.MVVM.Models.Power
 {
-    class PowerPull
+    class PPushModel
     {
     }
 }

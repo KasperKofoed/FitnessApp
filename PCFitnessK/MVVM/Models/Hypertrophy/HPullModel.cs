@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCFitnessK.MVVM.Models.Hypertrophy
 {
-    class HypertrophyPush
+    class HPullModel
     {
     }
 }

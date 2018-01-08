@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PCFitnessK.MVVM.Models.Power
+namespace PCFitnessK.MVVM.Models.Hypertrophy
 {
-    class PowerPush
+    class HPushModel
     {
     }
 }

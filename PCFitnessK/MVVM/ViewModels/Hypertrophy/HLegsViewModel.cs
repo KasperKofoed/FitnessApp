@@ -23,13 +23,11 @@ namespace PCFitnessK.MVVM.ViewModels.Hypertrophy
         }
 
         public List<int> GetRepRange { get { return _repRange; } set{value = _repRange; } }
-        public HLegsDataStorage DataStorage { get {return _dataStorage; } set {value = _dataStorage; } }
         public List<int> GetSets { get { return _sets; } set { value = _sets; } }
+        public HLegsDataStorage DataStorage { get {return _dataStorage; } set {value = _dataStorage; } }
+        
 
-        //public string ItemIsSelected
-        //{
-
-        //}
+       
 
     }
 }
