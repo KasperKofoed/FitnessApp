@@ -1,0 +1,6 @@
+namespace BroFitnessDBWebService.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}
