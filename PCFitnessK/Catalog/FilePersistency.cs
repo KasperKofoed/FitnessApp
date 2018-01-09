@@ -1,0 +1,49 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.Storage;
+
+namespace PCFitnessK.Catalog
+{
+    public class FilePersistency<T> where T : class
+    {
+        private const string FileName = "data.json";
+        private CreationCollisionOption _options;
+        private StorageFolder _folder;
+
+        public FilePersistency()
+        {
+            _options = CreationCollisionOption.OpenIfExists;
+            _folder = ApplicationData.Current.LocalFolder;
+        }
+
+        public async Task Save(List<T> data)
+        {
+            var dataFile = await _folder.CreateFileAsync(FileName, _options);
+            string dataJSON = JsonConvert.SerializeObject(data);
+            await FileIO.WriteTextAsync(dataFile, dataJSON);
+        }
+
+        public async Task<List<T>> Load()
+        {
+            try
+            {
+                StorageFile dataFile = await _folder.GetFileAsync(FileName);
+                string dataJSON = await FileIO.ReadTextAsync(dataFile);
+                return (dataJSON != null) ?
+                JsonConvert.DeserializeObject<List<T>>(dataJSON)
+                : new List<T>();
+            }
+            catch (FileNotFoundException)
+            {
+                await Save(new List<T>());
+                return new List<T>();
+            }
+        }
+    }
+
+}

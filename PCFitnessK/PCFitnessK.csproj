@@ -96,6 +96,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Catalog\Catalog.cs" />
+    <Compile Include="Catalog\FilePersistency.cs" />
+    <Compile Include="Catalog\HLegCatalog.cs" />
     <Compile Include="Catalog\WebAPICatalog.cs" />
     <Compile Include="DataStorage\RepMaxCalcDataStorage.cs" />
     <Compile Include="DataStorage\HLegsDataStorage.cs" />
@@ -227,6 +229,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>10.0.3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />

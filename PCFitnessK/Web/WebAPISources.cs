@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using PCFitnessK.MVVM.Models;
 
 //namespace PCFitnessK.Web
 //{
-//    public interface IDataSource<T>
+//    public class WebAPISource<T> : IDataSource<T> where T : class, IKey
 //    {
-//        Task<List<T>> Load();
-//        Task<int> Create(T obj);
-//        Task<T> Read(int key);
-//        Task Update(int key, T obj);
-//        Task Delete(int key);
+      
 //    }
 //}
 

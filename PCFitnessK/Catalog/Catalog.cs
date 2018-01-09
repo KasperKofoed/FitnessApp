@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PCFitnessK.MVVM.Models;
+using PCFitnessK.Web;
 
 
 //namespace PCFitnessK.Catalog

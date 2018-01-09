@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace TouchpointApp.Command
+namespace PCFitnessK.Command
 {
     public class RelayCommand : ICommand
     {
