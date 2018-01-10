@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using 
 
 namespace PCFitnessK.MVVM.Models.Hypertrophy
 {
-    public class HLegsModel : ViewModelBase
+    public class HLegsModel 
     {
         #region Fields
         private double _itemSelectedSquatReps;
@@ -73,109 +74,109 @@ namespace PCFitnessK.MVVM.Models.Hypertrophy
         public double ItemSelectedSquatRepsModel
         {
             get { return _itemSelectedSquatReps; }
-            set { _itemSelectedSquatReps = value; OnPropertyChanged(); }
+            set { _itemSelectedSquatReps = value; }
         }
 
         public double ItemSelectedSquatSetsModel
         {
             get { return _itemSelectedSquatSets; }
-            set { _itemSelectedSquatSets = value; OnPropertyChanged(); }
+            set { _itemSelectedSquatSets = value; }
         }
 
         public double WeightSquatModel
         {
             get { return _WeightSquat; }
-            set { _WeightSquat = value; OnPropertyChanged(); }
+            set { _WeightSquat = value; }
         }
 
         public double ItemSelectedLegPressRepsModel
         {
             get { return _itemSelectedLegPressReps; }
-            set { _itemSelectedLegPressReps = value; OnPropertyChanged(); }
+            set { _itemSelectedLegPressReps = value;}
         }
 
         public double ItemSelectedLegPressSetsModel
         {
             get { return _itemSelectedLegPressSets; }
-            set { _itemSelectedLegPressSets = value; OnPropertyChanged(); }
+            set { _itemSelectedLegPressSets = value; }
         }
 
         public double WeightLegPressModel
         {
             get { return _WeightLegPress; }
-            set { _WeightLegPress = value; OnPropertyChanged(); }
+            set { _WeightLegPress = value; }
         }
 
         public double ItemSelectedLungesRepsModel
         {
             get { return _itemSelectedLungesReps; }
-            set { _itemSelectedLungesReps = value; OnPropertyChanged(); }
+            set { _itemSelectedLungesReps = value; }
         }
 
         public double ItemSelectedLungesSetsModel
         {
             get { return _itemSelectedLungesSets; }
-            set { _itemSelectedLungesSets = value; OnPropertyChanged(); }
+            set { _itemSelectedLungesSets = value; }
         }
 
         public double WeightLungeModel
         {
             get { return _WeightLunge; }
-            set { _WeightLunge = value; OnPropertyChanged(); }
+            set { _WeightLunge = value; }
         }
 
         public double ItemSelectedHamstringCurlRepsModel
         {
             get { return _itemSelectedHamstringCurlReps; }
-            set { _itemSelectedHamstringCurlReps = value; OnPropertyChanged(); }
+            set { _itemSelectedHamstringCurlReps = value; }
         }
 
         public double ItemSelectedHamstringCurlSetsModel
         {
             get { return _itemSelectedHamstringCurlSets; }
-            set { _itemSelectedHamstringCurlSets = value; OnPropertyChanged(); }
+            set { _itemSelectedHamstringCurlSets = value;}
         }
 
         public double WeightHamstringCurlModel
         {
             get { return _WeightHamstringCurl; }
-            set { _WeightHamstringCurl = value; OnPropertyChanged(); }
+            set { _WeightHamstringCurl = value; }
         }
 
         public double ItemSelectedQuadExtensionsRepsModel
         {
             get { return _itemSelectedQuadExtensionsReps; }
-            set { _itemSelectedQuadExtensionsReps = value; OnPropertyChanged(); }
+            set { _itemSelectedQuadExtensionsReps = value; }
         }
 
         public double ItemSelectedQuadExtensionsSetsModel
         {
             get { return _itemSelectedQuadExtensionsSets; }
-            set { _itemSelectedQuadExtensionsSets = value; OnPropertyChanged(); }
+            set { _itemSelectedQuadExtensionsSets = value; }
         }
 
         public double WeightQuadExtensionModel
         {
             get { return _WeightQuadExtension; }
-            set { _WeightQuadExtension = value; OnPropertyChanged(); }
+            set { _WeightQuadExtension = value; }
         }
 
         public double ItemSelectedOuterThighPressRepsModel
         {
             get { return _itemSelectedOuterThighPressReps; }
-            set { _itemSelectedOuterThighPressReps = value; OnPropertyChanged(); }
+            set { _itemSelectedOuterThighPressReps = value;}
         }
 
         public double ItemSelectedOuterThighPressSetsModel
         {
             get { return _itemSelectedOuterThighPressSets; }
-            set { _itemSelectedOuterThighPressSets = value; OnPropertyChanged(); }
+            set { _itemSelectedOuterThighPressSets = value;}
         }
 
         public double WeightOuterThighPressModel
         {
             get { return _WeightOuterThighPress; }
-            set { _WeightOuterThighPress = value; OnPropertyChanged(); }
+            set { _WeightOuterThighPress = value;}
         }
         #endregion
     }

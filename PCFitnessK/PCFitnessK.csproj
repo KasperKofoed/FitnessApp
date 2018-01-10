@@ -95,10 +95,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Catalog\Catalog.cs" />
-    <Compile Include="Catalog\FilePersistency.cs" />
-    <Compile Include="Catalog\HLegCatalog.cs" />
-    <Compile Include="Catalog\WebAPICatalog.cs" />
+    <Compile Include="Persistency\Catalog.cs" />
+    <Compile Include="Persistency\FilePersistency.cs" />
+    <Compile Include="Persistency\HLegCatalog.cs" />
+    <Compile Include="Persistency\WebAPICatalog.cs" />
     <Compile Include="DataStorage\RepMaxCalcDataStorage.cs" />
     <Compile Include="DataStorage\HLegsDataStorage.cs" />
     <Compile Include="DataStorage\HPullDataStorage.cs" />

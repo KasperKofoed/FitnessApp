@@ -14,7 +14,6 @@ namespace PCFitnessK.MVVM.ViewModels.Hypertrophy
         private List<int> _repRange;
         private List<int> _sets;
         private HLegsDataStorage _dataStorage;
-        private RelayCommand _relayCommand;
 
 
         public HLegsViewModel()
@@ -24,14 +23,19 @@ namespace PCFitnessK.MVVM.ViewModels.Hypertrophy
 
             _dataStorage = new HLegsDataStorage();
 
-            //OpretNyKursistCommand = new RelayCommand();
+            GemWorkOutCommand = new RelayCommand();
         }
 
         public List<int> GetRepRange { get { return _repRange; } set{value = _repRange; } }
         public List<int> GetSets { get { return _sets; } set { value = _sets; } }
         public HLegsDataStorage DataStorage { get {return _dataStorage; } set {value = _dataStorage; } }
-
         public RelayCommand GemWorkOutCommand { get; set; }
+
+        public void OpretHLegWorkout ()
+        {
+            Catalog.Create()
+        }
+
 
 
 
